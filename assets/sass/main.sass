@@ -1,0 +1,21 @@
+// cores
+$branco: #fff
+$cinza: #bbb
+$cinzaescuro: #777
+
+@media only screen and (min-width: 0px)
+	body
+		background-color: $branco
+
+	form
+		label
+			width: 100%
+			margin: 5px 0 0 0
+		label+input
+			border: none
+			border-bottom: 1px solid $cinza
+		input:focus
+			outline: none
+			border-bottom-color: $cinzaescuro
+		input
+			padding: 3px 1px

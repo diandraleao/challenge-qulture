@@ -1,0 +1,21 @@
+{
+  "name": "lp-v2",
+  "description": "",
+  "version": "1.0.0",
+  "devDependencies": {
+    "browser-sync": "*",
+    "gulp": "3.9.1",
+    "gulp-minify": "0.0.14",
+    "gulp-sass": "^3.1.0",
+    "gulp-jsmin": "*",
+    "gulp-rename": "*",
+    "gulp-debug": "*",
+    "gulp-util": "*",
+    "gulp-imagemin": "*",
+    "child_process": "*",
+    "gulp-changed": "*"
+  },
+  "scripts": {
+    "watch": "gulp watch"
+  }
+}

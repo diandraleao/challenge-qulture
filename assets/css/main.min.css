@@ -1,0 +1,21 @@
+@media only screen and (min-width: 0px) {
+  /* line 7, assets/sass/main.min.sass */
+  body {
+    background-color: #fff; }
+  /* line 11, assets/sass/main.min.sass */
+  form label {
+    width: 100%;
+    margin: 5px 0 0 0; }
+  /* line 14, assets/sass/main.min.sass */
+  form label + input {
+    border: none;
+    border-bottom: 1px solid #bbb; }
+  /* line 17, assets/sass/main.min.sass */
+  form input:focus {
+    outline: none;
+    border-bottom-color: #777; }
+  /* line 20, assets/sass/main.min.sass */
+  form input {
+    padding: 3px 1px; } }
+
+/*# sourceMappingURL=../../sass */
