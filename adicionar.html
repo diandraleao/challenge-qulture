@@ -26,8 +26,8 @@
 						<div class="principal-menu">
 							<nav>
 								<ul class="nav nav-pills">
-									<li class="first"><a href="#">Adicionar</a></li>
-									<li class="last"><a href="#">Consultar</a></li>
+									<li class="first active"><a href="#">Adicionar</a></li>
+									<li class="last"><a href="consultar.html">Consultar</a></li>
 								</ul>
 							</nav>
 						</div>
@@ -36,11 +36,11 @@
 						<div class="user-menu">
 							<div class="dropdown">
 								<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-								Fulaninhx
+								<span class="glyphicon glyphicon-user" aria-hidden="true"></span> Fulaninhx
 								<span class="caret"></span>
 								</button>
 								<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-									<li><a href="#">Sair</a></li>
+									<li><a href="#"><span class="glyphicon glyphicon-off" aria-hidden="true"></span> Sair</a></li>
 								</ul>
 							</div>
 						</div>
@@ -57,36 +57,50 @@
 				<section class="add-colab">
 					<form id="form-add-colab" action="" method="get" accept-charset="utf-8">
 						<div class="row">
-							<div class="form-group">
-								<label for="colab_name">Nome</label>
-								<input type="text" name="colab_name" value id="colab_name">
+							<div class="col-md-6">
+								<div class="form-group">
+									<label for="colab_name">Nome</label>
+									<input type="text" name="colab_name" value id="colab_name">
+								</div>
 							</div>
 						</div>
 						<div class="row">
-							<div class="form-group">
-								<label for="colab_email">E-mail</label>
-								<input type="text" name="colab_email" value id="colab_email">
+							<div class="col-md-6">
+								<div class="form-group">
+									<label for="colab_email">E-mail</label>
+									<input type="email" name="colab_email" value id="colab_email">
+								</div>
 							</div>
 						</div>
 						<div class="row">
-							<div class="form-group">
-								<label for="colab_photo">URL foto</label>
-								<input type="text" name="colab_photo" value id="colab_photo">
+							<div class="col-md-6">
+								<div class="form-group">
+									<label for="colab_photo">URL foto</label>
+									<input type="text" name="colab_photo" value id="colab_photo">
+								</div>
 							</div>
 						</div>
 						<div class="row">
-							<div class="form-group">
-								<label for="colab_job">Cargo</label>
-								<input type="text" name="colab_job" value id="colab_job">
+							<div class="col-md-6">
+								<div class="form-group">
+									<label for="colab_job">Cargo</label>
+									<input type="text" name="colab_job" value id="colab_job">
+								</div>
 							</div>
 						</div>
 						<div class="row">
-							<div class="form-group">
-								<label for="colab_start">Data de admissão</label>
-								<input type="text" name="colab_start" value id="colab_start">
+							<div class="col-md-6">
+								<div class="form-group">
+									<label for="colab_start">Data de admissão</label>
+									<input type="text" name="colab_start" value id="colab_start">
+								</div>
 							</div>
 						</div>
-						<button class="btn" type="submit">Adicionar</button>
+						<div class="row">
+							<div class="col-md-6">
+								<button class="btn pull-right" type="submit">Adicionar</button>
+							</div>
+						</div>
 					</form>
 				</section>
 			</div>

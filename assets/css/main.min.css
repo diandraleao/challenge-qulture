@@ -16,6 +16,7 @@
     border-bottom-color: #777; }
   /* line 20, assets/sass/main.min.sass */
   form input {
-    padding: 3px 1px; } }
+    padding: 3px 1px;
+    width: 100%; } }
 
 /*# sourceMappingURL=../../sass */

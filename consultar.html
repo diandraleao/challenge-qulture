@@ -20,23 +20,31 @@
 
 	<!-- HEADER -->
 		<header>
-			<div class="principal-menu">
-				<nav>
-					<ul class="nav nav-pills nav-stacked">
-						<li class="first"><a href="#">Adicionar</a></li>
-						<li class="last"><a href="#">Consultar</a></li>
-					</ul>
-				</nav>
-			</div>
-			<div class="user-menu">
-				<div class="dropdown">
-					<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-					{user}
-					<span class="caret"></span>
-					</button>
-					<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-						<li><a href="#">Sair</a></li>
-					</ul>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-10">
+						<div class="principal-menu">
+							<nav>
+								<ul class="nav nav-pills">
+									<li class="first"><a href="adicionar.html">Adicionar</a></li>
+									<li class="last active"><a href="#">Consultar</a></li>
+								</ul>
+							</nav>
+						</div>
+					</div>
+					<div class="col-md-2">
+						<div class="user-menu">
+							<div class="dropdown">
+								<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+								<span class="glyphicon glyphicon-user" aria-hidden="true"></span> Fulaninhx
+								<span class="caret"></span>
+								</button>
+								<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+									<li><a href="#"><span class="glyphicon glyphicon-off" aria-hidden="true"></span> Sair</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</header>
@@ -44,19 +52,23 @@
 
 	<!-- MAIN -->
 		<main>
-			<h1>Consultar Colaborador</h1>
-			<section class="table-list">
-				<div id="datatable-list">
-					
-				</div>
-			</section>
+			<div class="container">
+				<h1>Consultar Colaborador</h1>
+				<section class="table-list">
+					<div id="datatable-list">
+						
+					</div>
+				</section>
+			</div>
 		</main>
 	<!-- MAIN -->
 
 
 	<!-- FOOTER -->
 		<footer>
-			<p>2019 - <a href="https://www.linkedin.com/in/diandraleao">diandraleao</a></p>
+			<div class="container">
+				<p>2019 - <a href="https://www.linkedin.com/in/diandraleao">diandraleao</a></p>
+			</div>
 		</footer>
 	<!-- FOOTER -->
 
