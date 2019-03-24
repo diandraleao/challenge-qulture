@@ -17,6 +17,13 @@
   /* line 20, assets/sass/main.min.sass */
   form input {
     padding: 3px 1px;
-    width: 100%; } }
+    width: 100%; }
+  /* line 24, assets/sass/main.min.sass */
+  .loading {
+    background-image: url("../img/loading.gif");
+    background-position: center;
+    display: none;
+    position: absolute;
+    z-index: 9999; } }
 
 /*# sourceMappingURL=../../sass */
