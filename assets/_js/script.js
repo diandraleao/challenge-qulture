@@ -7,6 +7,7 @@ $(document).ready(function(){
 var DEFAULT = {
 	init: function(){
 
+		DEFAULT.inputMasks();
 		DEFAULT.getColab();
 		DEFAULT.addColab();
 	},
@@ -61,16 +62,29 @@ var DEFAULT = {
 
 		$(document).on('click touchstart', '#form-add-colab button[type="submit"]', function(e) {
 			var form = $('form-add-colab');
-			var newUser  =  '?name='+form.find('input[name="colab_name"]').val() +
-							'&email='+form.find('input[name="colab_email"]').val()+
-							'&job_title='+form.find('input[name="colab_job"]').val()+
-							'&admission_date='+form.find('input[name="colab_start"]').val()+
-							'&photo_url='+form.find('input[name="colab_photo"]').val();
+
+			var name = form.find('input[name="colab_name"]').val();
+			var email = form.find('input[name="colab_email"]').val();
+			var job_title = form.find('input[name="colab_job"]').val();
+			var admission_date = form.find('input[name="colab_start"]').val();
+			var photo_url = form.find('input[name="colab_photo"]').val();
+
+			var aux = admission_date.split('/');
+			var day,month,year;
+			day = aux[0];
+			month = aux[1];
+			year = aux[2];
+
+			admission_date = year+'-'+month+'-'+day;
+
+			var user  = '{ user {name:'+name+',email:'+email+',job_title:'+job_title+',admission_date:'+admission_date+',photo_url:'+photo_url+'}}';
+
 
 			$.ajax({
 				url: '//qr-challenge.herokuapp.com/api/v1/users',
 				type: "POST",
-				data: newUser
+				data: JSON.parse(user),
+           		dataType: "json",
 			})
 			.done(function(resp) {
 				console.log(resp);
@@ -82,6 +96,10 @@ var DEFAULT = {
 
 	deleteColab: function (id) {
 		
+	},
+
+	inputMasks: function(){
+		$('.date').mask("00/00/0000", {placeholder: "__/__/____"});
 	}
 
 }
